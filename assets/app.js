@@ -64,8 +64,11 @@ function renderMeta(data) {
       month: "short",
       year: "numeric",
     });
+  const verified = data.vivino_verified
+    ? ` · ${data.vivino_verified} scores ✓ live from Vivino`
+    : "";
   el.meta.textContent =
-    `Updated ${fmt(data.generated_at)} · next pour ${fmt(data.next_update)} · ${data.count} bottles tasted`;
+    `Updated ${fmt(data.generated_at)} · next pour ${fmt(data.next_update)} · ${data.count} bottles${verified}`;
 }
 
 function renderChips(container, key, values, labelFn = (v) => v) {
@@ -112,10 +115,23 @@ function describe() {
 }
 
 function cardHTML(w) {
-  const stars = "★";
+  const bottle = w.image
+    ? `<img class="card__photo" src="${escape(w.image)}" alt="${escape(w.name)} bottle"
+           loading="lazy" referrerpolicy="no-referrer"
+           onerror="this.outerHTML=window.__bottleSVG('${w.type}')" />`
+    : bottleSVG(w.type);
+
+  const scoreInner = `<span class="star">★</span>${Number(w.vivino).toFixed(1)}${
+    w.vivino_verified ? '<span class="verified" title="Verified live on Vivino">✓</span>' : ""
+  }`;
+  const score = w.vivino_url
+    ? `<a class="score" href="${escape(w.vivino_url)}" target="_blank" rel="noopener noreferrer"
+          title="View on Vivino">${scoreInner}</a>`
+    : `<span class="score">${scoreInner}</span>`;
+
   return `
     <li class="card">
-      <div class="card__bottle">${bottleSVG(w.type)}</div>
+      <div class="card__bottle">${bottle}</div>
       <div class="card__body">
         <span class="card__shop">${escape(w.supermarket)}</span>
         <h3 class="card__name">
@@ -125,14 +141,14 @@ function cardHTML(w) {
         <span class="type-tag type-${w.type}">${TYPE_LABELS[w.type] || w.type}</span>
         <div class="card__foot">
           <span class="price">£${Number(w.price).toFixed(2)}</span>
-          <span class="score" title="${w.ratings.toLocaleString()} Vivino ratings">
-            <span class="star">${stars}</span>${Number(w.vivino).toFixed(1)}
-            <span class="count">${formatCount(w.ratings)}</span>
-          </span>
+          ${score}
         </div>
       </div>
     </li>`;
 }
+
+// Exposed so an <img> onerror can swap a broken photo for the SVG fallback.
+window.__bottleSVG = bottleSVG;
 
 function bottleSVG(type) {
   const c = BOTTLE_COLOURS[type] || BOTTLE_COLOURS.red;

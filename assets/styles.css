@@ -154,8 +154,15 @@ body {
   opacity: 0.7;
 }
 
-.card__bottle { flex: 0 0 52px; display: flex; align-items: flex-start; justify-content: center; }
+.card__bottle { flex: 0 0 54px; display: flex; align-items: flex-start; justify-content: center; }
 .card__bottle svg { width: 52px; height: 132px; }
+.card__photo {
+  width: 54px;
+  height: 132px;
+  object-fit: contain;
+  object-position: top center;
+  filter: drop-shadow(0 6px 8px rgba(74, 18, 38, 0.18));
+}
 
 .card__body { min-width: 0; display: flex; flex-direction: column; }
 .card__shop {
@@ -203,6 +210,14 @@ body {
 }
 .score .star { color: var(--gold); }
 .score .count { font-size: 0.68rem; color: #997b3a; font-weight: 500; }
+a.score { text-decoration: none; transition: transform 0.08s ease; }
+a.score:hover { transform: translateY(-1px); }
+.score .verified {
+  margin-left: 0.1rem;
+  color: #2e7d4f;
+  font-size: 0.72rem;
+  font-weight: 700;
+}
 
 .type-tag {
   display: inline-block;

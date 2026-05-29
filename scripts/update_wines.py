@@ -43,7 +43,10 @@ def _slug(*parts: str) -> str:
 
 
 def scrape_live(verbose: bool = True) -> tuple[list[dict], set[str]]:
-    """Return (wines, supermarkets_done_live)."""
+    """Return (raw_scraped_wines, supermarkets_done_live).
+
+    Scraped bottles have no Vivino score yet — :func:`enrich` adds that.
+    """
     wines: list[dict] = []
     live: set[str] = set()
     for cls in SCRAPERS:
@@ -54,28 +57,60 @@ def scrape_live(verbose: bool = True) -> tuple[list[dict], set[str]]:
             print(f"  {result.supermarket:<14} {len(result.wines):>3} bottles  [{status}]")
         if result.ok and result.wines:
             for w in result.wines:
-                rating = vivino.lookup_rating(w["name"])
-                if rating is None:
-                    continue  # no Vivino score -> can't rank it, skip
-                w["vivino"], w["ratings"] = rating
                 w.setdefault("region", "")
                 w.setdefault("grape", "")
-                w.setdefault("url", "#")
+                w.setdefault("ratings", 0)
                 w["id"] = _slug(w["supermarket"], w["name"])
+                w["url"] = w.get("url") or "#"
                 wines.append(w)
             live.add(result.supermarket)
     return wines, live
 
 
+def enrich(wines: list[dict], verbose: bool = True) -> list[dict]:
+    """Attach live Vivino data (score, bottle photo, link) when confident.
+
+    Each wine keeps its curated/seed Vivino score as a fallback. A confident
+    match overwrites the score, adds a real bottle-shot image and a Vivino link,
+    and flags ``vivino_verified``. Bottles with neither a confident match nor a
+    pre-existing score are dropped (they can't be ranked).
+    """
+    out: list[dict] = []
+    hits = 0
+    for w in wines:
+        res = vivino.lookup(w["name"])
+        if res:
+            w["vivino"] = res["vivino"]
+            w["image"] = res["image"]
+            w["vivino_url"] = res["url"]
+            w["vivino_match"] = res["match"]
+            w["vivino_verified"] = True
+            hits += 1
+        else:
+            w.setdefault("image", None)
+            w.setdefault("vivino_url", None)
+            w.setdefault("vivino_verified", False)
+        if w.get("vivino") is not None:
+            out.append(w)
+    if verbose:
+        print(f"  Vivino: {hits}/{len(wines)} bottles verified live")
+    return out
+
+
 def build(seed_only: bool = False, verbose: bool = True) -> dict:
     seed = get_seed_wines()
     if seed_only:
+        for w in seed:
+            w.setdefault("image", None)
+            w.setdefault("vivino_url", None)
+            w.setdefault("vivino_verified", False)
         wines = seed
         live: set[str] = set()
     else:
         live_wines, live = scrape_live(verbose=verbose)
         # Fill in supermarkets that didn't scrape with their seed bottles.
-        wines = live_wines + [w for w in seed if w["supermarket"] not in live]
+        merged = live_wines + [w for w in seed if w["supermarket"] not in live]
+        wines = enrich(merged, verbose=verbose)
 
     # Rank: highest Vivino first, ties broken by number of ratings.
     wines.sort(key=lambda w: (w["vivino"], w["ratings"]), reverse=True)
@@ -89,6 +124,7 @@ def build(seed_only: bool = False, verbose: bool = True) -> dict:
         "supermarkets": SUPERMARKETS,
         "types": WINE_TYPES,
         "live_sources": sorted(live),
+        "vivino_verified": sum(1 for w in wines if w.get("vivino_verified")),
         "count": len(wines),
         "wines": wines,
     }
@@ -109,9 +145,10 @@ def main() -> int:
     OUT.write_text(json.dumps(data, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
 
     if verbose:
-        live = ", ".join(data["live_sources"]) or "none (used seed data)"
+        live = ", ".join(data["live_sources"]) or "none (supermarket catalogs use curated list)"
         print(f"\nWrote {data['count']} wines to {OUT.relative_to(ROOT)}")
-        print(f"Live-scraped sources: {live}")
+        print(f"Live-scraped catalogs: {live}")
+        print(f"Vivino scores verified live: {data['vivino_verified']}/{data['count']}")
         print(f"Next update due: {data['next_update']}")
     return 0
 
