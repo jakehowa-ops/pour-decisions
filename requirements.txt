@@ -1,0 +1,4 @@
+# Runtime deps for the fortnightly scraper (scripts/update_wines.py).
+# The app itself is static and needs none of these to run.
+requests>=2.31
+beautifulsoup4>=4.12
