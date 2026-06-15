@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-06-01",
-  "next_update": "2026-06-15",
+  "generated_at": "2026-06-15",
+  "next_update": "2026-06-29",
   "update_interval_days": 14,
   "supermarkets": [
     "Waitrose",
@@ -18,7 +18,7 @@
     "sparkling"
   ],
   "live_sources": [],
-  "vivino_verified": 14,
+  "vivino_verified": 3,
   "count": 70,
   "wines": [
     {
@@ -37,20 +37,34 @@
       "vivino_verified": false
     },
     {
-      "id": "seed-028",
-      "name": "Château Minuty M Rosé",
+      "id": "seed-022",
+      "name": "Barolo DOCG, Fontanafredda",
       "supermarket": "Ocado",
-      "type": "rose",
-      "price": 18.0,
+      "type": "red",
+      "price": 24.0,
       "vivino": 4.3,
-      "ratings": 12400,
-      "region": "Provence, France",
-      "grape": "Grenache / Cinsault",
-      "url": "https://www.ocado.com/search?entry=Ch%C3%A2teau+Minuty+M+Ros%C3%A9",
-      "image": "https://images.vivino.com/thumbs/V6UNpR07Qcea6n0qR25osw_pb_x300.png",
-      "vivino_url": "https://www.vivino.com/en/minuty-chateau-minuty-281/w/4301250?year=2024&price_id=39710493",
-      "vivino_match": "Château Minuty 281 2024",
-      "vivino_verified": true
+      "ratings": 9400,
+      "region": "Piedmont, Italy",
+      "grape": "Nebbiolo",
+      "url": "https://www.ocado.com/search?entry=Barolo+DOCG%2C+Fontanafredda",
+      "image": null,
+      "vivino_url": null,
+      "vivino_verified": false
+    },
+    {
+      "id": "seed-009",
+      "name": "Nyetimber Classic Cuvée",
+      "supermarket": "Waitrose",
+      "type": "sparkling",
+      "price": 39.99,
+      "vivino": 4.3,
+      "ratings": 3400,
+      "region": "West Sussex, England",
+      "grape": "Chardonnay / Pinot",
+      "url": "https://www.waitrose.com/ecom/shop/search?searchTerm=Nyetimber+Classic+Cuv%C3%A9e",
+      "image": null,
+      "vivino_url": null,
+      "vivino_verified": false
     },
     {
       "id": "seed-012",
@@ -68,6 +82,21 @@
       "vivino_verified": false
     },
     {
+      "id": "seed-024",
+      "name": "Cloudy Bay Sauvignon Blanc",
+      "supermarket": "Ocado",
+      "type": "white",
+      "price": 26.0,
+      "vivino": 4.2,
+      "ratings": 62000,
+      "region": "Marlborough, NZ",
+      "grape": "Sauvignon Blanc",
+      "url": "https://www.ocado.com/search?entry=Cloudy+Bay+Sauvignon+Blanc",
+      "image": null,
+      "vivino_url": null,
+      "vivino_verified": false
+    },
+    {
       "id": "seed-021",
       "name": "Catena Malbec",
       "supermarket": "Ocado",
@@ -78,10 +107,9 @@
       "region": "Mendoza, Argentina",
       "grape": "Malbec",
       "url": "https://www.ocado.com/search?entry=Catena+Malbec",
-      "image": "https://images.vivino.com/thumbs/PMHgeNvJSNmp9OPIv8Yn2w_pb_x300.png",
-      "vivino_url": "https://www.vivino.com/en/catena-catena-alta-malbec/w/1870?year=2021&price_id=42378557",
-      "vivino_match": "Catena Alta Malbec 2021",
-      "vivino_verified": true
+      "image": null,
+      "vivino_url": null,
+      "vivino_verified": false
     },
     {
       "id": "seed-032",
@@ -129,38 +157,6 @@
       "vivino_verified": false
     },
     {
-      "id": "seed-009",
-      "name": "Nyetimber Classic Cuvée",
-      "supermarket": "Waitrose",
-      "type": "sparkling",
-      "price": 39.99,
-      "vivino": 4.2,
-      "ratings": 3400,
-      "region": "West Sussex, England",
-      "grape": "Chardonnay / Pinot",
-      "url": "https://www.waitrose.com/ecom/shop/search?searchTerm=Nyetimber+Classic+Cuv%C3%A9e",
-      "image": "https://images.vivino.com/thumbs/U9OoCJRqRYOIir4Gmxkycg_pb_x300.png",
-      "vivino_url": "https://www.vivino.com/en/nyetimber-classic-cuvee-brut/w/1397132?year=2017&price_id=39824120",
-      "vivino_match": "Nyetimber Classic Cuvee Brut 2017",
-      "vivino_verified": true
-    },
-    {
-      "id": "seed-024",
-      "name": "Cloudy Bay Sauvignon Blanc",
-      "supermarket": "Ocado",
-      "type": "white",
-      "price": 26.0,
-      "vivino": 4.1,
-      "ratings": 62000,
-      "region": "Marlborough, NZ",
-      "grape": "Sauvignon Blanc",
-      "url": "https://www.ocado.com/search?entry=Cloudy+Bay+Sauvignon+Blanc",
-      "image": "https://images.vivino.com/thumbs/n0wmCqAiQ32u9fKcCT8Vyw_pb_x300.png",
-      "vivino_url": "https://www.vivino.com/en/cloudy-bay-sauvignon-blanc/w/18978?year=2025&price_id=40533177",
-      "vivino_match": "Cloudy Bay Sauvignon Blanc 2025",
-      "vivino_verified": true
-    },
-    {
       "id": "seed-006",
       "name": "Whispering Angel Rosé",
       "supermarket": "Waitrose",
@@ -175,6 +171,36 @@
       "vivino_url": "https://www.vivino.com/en/chateau-d-esclans-whispering-angel-rose/w/1104824?year=2021&price_id=30972626",
       "vivino_match": "Château d'Esclans Whispering Angel Rosé 2021",
       "vivino_verified": true
+    },
+    {
+      "id": "seed-028",
+      "name": "Château Minuty M Rosé",
+      "supermarket": "Ocado",
+      "type": "rose",
+      "price": 18.0,
+      "vivino": 4.1,
+      "ratings": 12400,
+      "region": "Provence, France",
+      "grape": "Grenache / Cinsault",
+      "url": "https://www.ocado.com/search?entry=Ch%C3%A2teau+Minuty+M+Ros%C3%A9",
+      "image": null,
+      "vivino_url": null,
+      "vivino_verified": false
+    },
+    {
+      "id": "seed-027",
+      "name": "Mirabeau Pure Provence Rosé",
+      "supermarket": "Ocado",
+      "type": "rose",
+      "price": 14.5,
+      "vivino": 4.1,
+      "ratings": 8800,
+      "region": "Provence, France",
+      "grape": "Grenache / Syrah",
+      "url": "https://www.ocado.com/search?entry=Mirabeau+Pure+Provence+Ros%C3%A9",
+      "image": null,
+      "vivino_url": null,
+      "vivino_verified": false
     },
     {
       "id": "seed-023",
@@ -217,6 +243,21 @@
       "region": "Champagne, France",
       "grape": "Pinot / Chardonnay",
       "url": "https://www.tesco.com/groceries/en-GB/search?query=Tesco+Finest+Premier+Cru+Champagne+Brut",
+      "image": null,
+      "vivino_url": null,
+      "vivino_verified": false
+    },
+    {
+      "id": "seed-025",
+      "name": "Petit Chablis, Domaine du Colombier",
+      "supermarket": "Ocado",
+      "type": "white",
+      "price": 16.5,
+      "vivino": 4.1,
+      "ratings": 3200,
+      "region": "Burgundy, France",
+      "grape": "Chardonnay",
+      "url": "https://www.ocado.com/search?entry=Petit+Chablis%2C+Domaine+du+Colombier",
       "image": null,
       "vivino_url": null,
       "vivino_verified": false
@@ -338,24 +379,8 @@
       "grape": "Syrah",
       "url": "https://www.waitrose.com/ecom/shop/search?searchTerm=Ch%C3%A2teau+Maris+La+Touge+Syrah",
       "image": "https://images.vivino.com/thumbs/B23lM5fVSv6S1iMEVmGAlQ_pb_x300.png",
-      "vivino_url": "https://www.vivino.com/en/chateau-maris-la-touge/w/2258568?year=2020&price_id=37589162",
+      "vivino_url": "https://www.vivino.com/en/chateau-maris-la-touge/w/2258568?year=2020&price_id=35671223",
       "vivino_match": "Château Maris La Touge 2020",
-      "vivino_verified": true
-    },
-    {
-      "id": "seed-053",
-      "name": "19 Crimes Red Blend",
-      "supermarket": "Tesco",
-      "type": "red",
-      "price": 8.5,
-      "vivino": 4.0,
-      "ratings": 41000,
-      "region": "South Australia",
-      "grape": "Shiraz blend",
-      "url": "https://www.tesco.com/groceries/en-GB/search?query=19+Crimes+Red+Blend",
-      "image": "https://images.vivino.com/thumbs/fPEOzrKHRVe8mbBu4Drgmg_pb_x300.png",
-      "vivino_url": "https://www.vivino.com/en/nineteen-crimes-red-blend/w/2316699?price_id=40203146",
-      "vivino_match": "19 Crimes Red Blend",
       "vivino_verified": true
     },
     {
@@ -370,41 +395,24 @@
       "grape": "Sauvignon Blanc",
       "url": "https://www.waitrose.com/ecom/shop/search?searchTerm=Villa+Maria+Private+Bin+Sauvignon+Blanc",
       "image": "https://images.vivino.com/thumbs/8oskU7ePTNiChLomWouUZw_pb_x300.png",
-      "vivino_url": "https://www.vivino.com/en/villa-maria-auckland-private-bin-sauvignon-blanc/w/39034?year=2024&price_id=40199336",
+      "vivino_url": "https://www.vivino.com/en/villa-maria-auckland-private-bin-sauvignon-blanc/w/39034?year=2024&price_id=40073570",
       "vivino_match": "Villa Maria Private Bin Sauvignon Blanc 2024",
       "vivino_verified": true
     },
     {
-      "id": "seed-022",
-      "name": "Barolo DOCG, Fontanafredda",
+      "id": "seed-030",
+      "name": "Bottega Gold Prosecco",
       "supermarket": "Ocado",
-      "type": "red",
-      "price": 24.0,
+      "type": "sparkling",
+      "price": 17.0,
       "vivino": 4.0,
-      "ratings": 9400,
-      "region": "Piedmont, Italy",
-      "grape": "Nebbiolo",
-      "url": "https://www.ocado.com/search?entry=Barolo+DOCG%2C+Fontanafredda",
-      "image": "https://images.vivino.com/thumbs/Se3K0ZSsR7-4m5KJKxxPUw_pb_x300.png",
-      "vivino_url": "https://www.vivino.com/en/fontanafredda-barolo/w/92461?year=2021&price_id=41011585",
-      "vivino_match": "Fontanafredda Barolo 2021",
-      "vivino_verified": true
-    },
-    {
-      "id": "seed-027",
-      "name": "Mirabeau Pure Provence Rosé",
-      "supermarket": "Ocado",
-      "type": "rose",
-      "price": 14.5,
-      "vivino": 4.0,
-      "ratings": 8800,
-      "region": "Provence, France",
-      "grape": "Grenache / Syrah",
-      "url": "https://www.ocado.com/search?entry=Mirabeau+Pure+Provence+Ros%C3%A9",
-      "image": "https://images.vivino.com/thumbs/QeL93gMSSsCkgh2n4YuuOw_pb_x300.png",
-      "vivino_url": "https://www.vivino.com/en/mirabeau-pure-provence-rose/w/2706517?year=2025&price_id=42442238",
-      "vivino_match": "Mirabeau Pure Provence Rosé 2025",
-      "vivino_verified": true
+      "ratings": 7600,
+      "region": "Veneto, Italy",
+      "grape": "Glera",
+      "url": "https://www.ocado.com/search?entry=Bottega+Gold+Prosecco",
+      "image": null,
+      "vivino_url": null,
+      "vivino_verified": false
     },
     {
       "id": "seed-039",
@@ -462,6 +470,21 @@
       "region": "Rioja, Spain",
       "grape": "Tempranillo",
       "url": "https://www.waitrose.com/ecom/shop/search?searchTerm=Waitrose+Rioja+Reserva",
+      "image": null,
+      "vivino_url": null,
+      "vivino_verified": false
+    },
+    {
+      "id": "seed-026",
+      "name": "Gavi di Gavi, La Battistina",
+      "supermarket": "Ocado",
+      "type": "white",
+      "price": 13.0,
+      "vivino": 4.0,
+      "ratings": 2900,
+      "region": "Piedmont, Italy",
+      "grape": "Cortese",
+      "url": "https://www.ocado.com/search?entry=Gavi+di+Gavi%2C+La+Battistina",
       "image": null,
       "vivino_url": null,
       "vivino_verified": false
@@ -612,6 +635,21 @@
       "region": "Douro, Portugal",
       "grape": "Touriga Nacional",
       "url": "https://www.marksandspencer.com/c/food-to-order/wine?search=M%26S+Found+Touriga+Nacional",
+      "image": null,
+      "vivino_url": null,
+      "vivino_verified": false
+    },
+    {
+      "id": "seed-053",
+      "name": "19 Crimes Red Blend",
+      "supermarket": "Tesco",
+      "type": "red",
+      "price": 8.5,
+      "vivino": 3.9,
+      "ratings": 41000,
+      "region": "South Australia",
+      "grape": "Shiraz blend",
+      "url": "https://www.tesco.com/groceries/en-GB/search?query=19+Crimes+Red+Blend",
       "image": null,
       "vivino_url": null,
       "vivino_verified": false
@@ -912,10 +950,9 @@
       "region": "Utiel-Requena, Spain",
       "grape": "Tempranillo",
       "url": "https://groceries.aldi.co.uk/en-GB/Search?keywords=Aldi+Toro+Loco+Tempranillo",
-      "image": "https://images.vivino.com/thumbs/kpbhrL37TGSO9C1grCX34g_pb_x300.png",
-      "vivino_url": "https://www.vivino.com/en/castillo-de-aresan-tempranillo-toro/w/6594359?year=2021&price_id=41072239",
-      "vivino_match": "Castillo de Aresan Tempranillo Toro 2021",
-      "vivino_verified": true
+      "image": null,
+      "vivino_url": null,
+      "vivino_verified": false
     },
     {
       "id": "seed-010",
@@ -931,38 +968,6 @@
       "image": null,
       "vivino_url": null,
       "vivino_verified": false
-    },
-    {
-      "id": "seed-025",
-      "name": "Petit Chablis, Domaine du Colombier",
-      "supermarket": "Ocado",
-      "type": "white",
-      "price": 16.5,
-      "vivino": 3.8,
-      "ratings": 3200,
-      "region": "Burgundy, France",
-      "grape": "Chardonnay",
-      "url": "https://www.ocado.com/search?entry=Petit+Chablis%2C+Domaine+du+Colombier",
-      "image": "https://images.vivino.com/thumbs/BsDvLTNoRAKjzvhboPcxJQ_pb_x300.png",
-      "vivino_url": "https://www.vivino.com/en/domaine-du-colombier-chablis-premier-cru-petit-chablis/w/1215961?year=2024&price_id=40132442",
-      "vivino_match": "Domaine du Colombier Petit Chablis 2024",
-      "vivino_verified": true
-    },
-    {
-      "id": "seed-026",
-      "name": "Gavi di Gavi, La Battistina",
-      "supermarket": "Ocado",
-      "type": "white",
-      "price": 13.0,
-      "vivino": 3.8,
-      "ratings": 2900,
-      "region": "Piedmont, Italy",
-      "grape": "Cortese",
-      "url": "https://www.ocado.com/search?entry=Gavi+di+Gavi%2C+La+Battistina",
-      "image": "https://images.vivino.com/thumbs/vPSqXElzTKmbtliKYfd_4Q_pb_x300.png",
-      "vivino_url": "https://www.vivino.com/en/la-battistina-gavi/w/60534?year=2024&price_id=39602236",
-      "vivino_match": "La Battistina Gavi 2024",
-      "vivino_verified": true
     },
     {
       "id": "seed-047",
@@ -1038,22 +1043,6 @@
       "image": null,
       "vivino_url": null,
       "vivino_verified": false
-    },
-    {
-      "id": "seed-030",
-      "name": "Bottega Gold Prosecco",
-      "supermarket": "Ocado",
-      "type": "sparkling",
-      "price": 17.0,
-      "vivino": 3.7,
-      "ratings": 7600,
-      "region": "Veneto, Italy",
-      "grape": "Glera",
-      "url": "https://www.ocado.com/search?entry=Bottega+Gold+Prosecco",
-      "image": "https://images.vivino.com/thumbs/Xr7HhhtcRzaCy_TSa4TJNg_pb_x300.png",
-      "vivino_url": "https://www.vivino.com/en/bottega-gold/w/1179426?price_id=35477253",
-      "vivino_match": "Bottega Gold",
-      "vivino_verified": true
     },
     {
       "id": "seed-049",
