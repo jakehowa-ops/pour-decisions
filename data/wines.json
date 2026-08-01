@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-07-15",
-  "next_update": "2026-07-29",
+  "generated_at": "2026-08-01",
+  "next_update": "2026-08-15",
   "update_interval_days": 14,
   "supermarkets": [
     "Waitrose",
@@ -18,7 +18,7 @@
     "sparkling"
   ],
   "live_sources": [],
-  "vivino_verified": 3,
+  "vivino_verified": 0,
   "count": 70,
   "wines": [
     {
@@ -77,6 +77,21 @@
       "region": "Rhône, France",
       "grape": "Grenache blend",
       "url": "https://www.marksandspencer.com/c/food-to-order/wine?search=M%26S+Classics+Ch%C3%A2teauneuf-du-Pape",
+      "image": null,
+      "vivino_url": null,
+      "vivino_verified": false
+    },
+    {
+      "id": "seed-002",
+      "name": "Château Maris La Touge Syrah",
+      "supermarket": "Waitrose",
+      "type": "red",
+      "price": 15.99,
+      "vivino": 4.3,
+      "ratings": 980,
+      "region": "Languedoc, France",
+      "grape": "Syrah",
+      "url": "https://www.waitrose.com/ecom/shop/search?searchTerm=Ch%C3%A2teau+Maris+La+Touge+Syrah",
       "image": null,
       "vivino_url": null,
       "vivino_verified": false
@@ -167,10 +182,9 @@
       "region": "Provence, France",
       "grape": "Grenache / Cinsault",
       "url": "https://www.waitrose.com/ecom/shop/search?searchTerm=Whispering+Angel+Ros%C3%A9",
-      "image": "https://images.vivino.com/thumbs/Ki7znlmVT7iu_na3qUqRpw_pb_x300.png",
-      "vivino_url": "https://www.vivino.com/en/chateau-d-esclans-whispering-angel-rose/w/1104824?year=2021&price_id=30972626",
-      "vivino_match": "Château d'Esclans Whispering Angel Rosé 2021",
-      "vivino_verified": true
+      "image": null,
+      "vivino_url": null,
+      "vivino_verified": false
     },
     {
       "id": "seed-028",
@@ -368,22 +382,6 @@
       "vivino_verified": false
     },
     {
-      "id": "seed-002",
-      "name": "Château Maris La Touge Syrah",
-      "supermarket": "Waitrose",
-      "type": "red",
-      "price": 15.99,
-      "vivino": 4.1,
-      "ratings": 980,
-      "region": "Languedoc, France",
-      "grape": "Syrah",
-      "url": "https://www.waitrose.com/ecom/shop/search?searchTerm=Ch%C3%A2teau+Maris+La+Touge+Syrah",
-      "image": "https://images.vivino.com/thumbs/B23lM5fVSv6S1iMEVmGAlQ_pb_x300.png",
-      "vivino_url": "https://www.vivino.com/en/chateau-maris-la-touge/w/2258568?year=2020&price_id=35671223",
-      "vivino_match": "Château Maris La Touge 2020",
-      "vivino_verified": true
-    },
-    {
       "id": "seed-004",
       "name": "Villa Maria Private Bin Sauvignon Blanc",
       "supermarket": "Waitrose",
@@ -394,10 +392,9 @@
       "region": "Marlborough, NZ",
       "grape": "Sauvignon Blanc",
       "url": "https://www.waitrose.com/ecom/shop/search?searchTerm=Villa+Maria+Private+Bin+Sauvignon+Blanc",
-      "image": "https://images.vivino.com/thumbs/8oskU7ePTNiChLomWouUZw_pb_x300.png",
-      "vivino_url": "https://www.vivino.com/en/villa-maria-auckland-private-bin-sauvignon-blanc/w/39034?year=2024&price_id=40073570",
-      "vivino_match": "Villa Maria Private Bin Sauvignon Blanc 2024",
-      "vivino_verified": true
+      "image": null,
+      "vivino_url": null,
+      "vivino_verified": false
     },
     {
       "id": "seed-030",
