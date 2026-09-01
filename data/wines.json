@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-08-15",
-  "next_update": "2026-08-29",
+  "generated_at": "2026-09-01",
+  "next_update": "2026-09-15",
   "update_interval_days": 14,
   "supermarkets": [
     "Waitrose",
@@ -18,7 +18,7 @@
     "sparkling"
   ],
   "live_sources": [],
-  "vivino_verified": 4,
+  "vivino_verified": 0,
   "count": 70,
   "wines": [
     {
@@ -52,6 +52,21 @@
       "vivino_verified": false
     },
     {
+      "id": "seed-009",
+      "name": "Nyetimber Classic Cuvée",
+      "supermarket": "Waitrose",
+      "type": "sparkling",
+      "price": 39.99,
+      "vivino": 4.3,
+      "ratings": 3400,
+      "region": "West Sussex, England",
+      "grape": "Chardonnay / Pinot",
+      "url": "https://www.waitrose.com/ecom/shop/search?searchTerm=Nyetimber+Classic+Cuv%C3%A9e",
+      "image": null,
+      "vivino_url": null,
+      "vivino_verified": false
+    },
+    {
       "id": "seed-012",
       "name": "M&S Classics Châteauneuf-du-Pape",
       "supermarket": "M&S",
@@ -62,6 +77,21 @@
       "region": "Rhône, France",
       "grape": "Grenache blend",
       "url": "https://www.marksandspencer.com/c/food-to-order/wine?search=M%26S+Classics+Ch%C3%A2teauneuf-du-Pape",
+      "image": null,
+      "vivino_url": null,
+      "vivino_verified": false
+    },
+    {
+      "id": "seed-002",
+      "name": "Château Maris La Touge Syrah",
+      "supermarket": "Waitrose",
+      "type": "red",
+      "price": 15.99,
+      "vivino": 4.3,
+      "ratings": 980,
+      "region": "Languedoc, France",
+      "grape": "Syrah",
+      "url": "https://www.waitrose.com/ecom/shop/search?searchTerm=Ch%C3%A2teau+Maris+La+Touge+Syrah",
       "image": null,
       "vivino_url": null,
       "vivino_verified": false
@@ -142,22 +172,6 @@
       "vivino_verified": false
     },
     {
-      "id": "seed-009",
-      "name": "Nyetimber Classic Cuvée",
-      "supermarket": "Waitrose",
-      "type": "sparkling",
-      "price": 39.99,
-      "vivino": 4.2,
-      "ratings": 3400,
-      "region": "West Sussex, England",
-      "grape": "Chardonnay / Pinot",
-      "url": "https://www.waitrose.com/ecom/shop/search?searchTerm=Nyetimber+Classic+Cuv%C3%A9e",
-      "image": "https://images.vivino.com/thumbs/U9OoCJRqRYOIir4Gmxkycg_pb_x300.png",
-      "vivino_url": "https://www.vivino.com/en/nyetimber-classic-cuvee-brut/w/1397132?year=2016",
-      "vivino_match": "Nyetimber Classic Cuvee Brut 2016",
-      "vivino_verified": true
-    },
-    {
       "id": "seed-006",
       "name": "Whispering Angel Rosé",
       "supermarket": "Waitrose",
@@ -168,10 +182,9 @@
       "region": "Provence, France",
       "grape": "Grenache / Cinsault",
       "url": "https://www.waitrose.com/ecom/shop/search?searchTerm=Whispering+Angel+Ros%C3%A9",
-      "image": "https://images.vivino.com/thumbs/Ki7znlmVT7iu_na3qUqRpw_pb_x300.png",
-      "vivino_url": "https://www.vivino.com/en/chateau-d-esclans-whispering-angel-rose/w/1104824?year=2024&price_id=39293522",
-      "vivino_match": "Château d'Esclans Whispering Angel Rosé 2024",
-      "vivino_verified": true
+      "image": null,
+      "vivino_url": null,
+      "vivino_verified": false
     },
     {
       "id": "seed-028",
@@ -369,22 +382,6 @@
       "vivino_verified": false
     },
     {
-      "id": "seed-002",
-      "name": "Château Maris La Touge Syrah",
-      "supermarket": "Waitrose",
-      "type": "red",
-      "price": 15.99,
-      "vivino": 4.1,
-      "ratings": 980,
-      "region": "Languedoc, France",
-      "grape": "Syrah",
-      "url": "https://www.waitrose.com/ecom/shop/search?searchTerm=Ch%C3%A2teau+Maris+La+Touge+Syrah",
-      "image": "https://images.vivino.com/thumbs/B23lM5fVSv6S1iMEVmGAlQ_pb_x300.png",
-      "vivino_url": "https://www.vivino.com/en/chateau-maris-la-touge/w/2258568?year=2020&price_id=35671223",
-      "vivino_match": "Château Maris La Touge 2020",
-      "vivino_verified": true
-    },
-    {
       "id": "seed-004",
       "name": "Villa Maria Private Bin Sauvignon Blanc",
       "supermarket": "Waitrose",
@@ -395,10 +392,9 @@
       "region": "Marlborough, NZ",
       "grape": "Sauvignon Blanc",
       "url": "https://www.waitrose.com/ecom/shop/search?searchTerm=Villa+Maria+Private+Bin+Sauvignon+Blanc",
-      "image": "https://images.vivino.com/thumbs/8oskU7ePTNiChLomWouUZw_pb_x300.png",
-      "vivino_url": "https://www.vivino.com/en/villa-maria-auckland-private-bin-sauvignon-blanc/w/39034?year=2024&price_id=39802877",
-      "vivino_match": "Villa Maria Private Bin Sauvignon Blanc 2024",
-      "vivino_verified": true
+      "image": null,
+      "vivino_url": null,
+      "vivino_verified": false
     },
     {
       "id": "seed-030",
