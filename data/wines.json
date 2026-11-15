@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-11-01",
-  "next_update": "2026-11-15",
+  "generated_at": "2026-11-15",
+  "next_update": "2026-11-29",
   "update_interval_days": 14,
   "supermarkets": [
     "Waitrose",
@@ -18,7 +18,7 @@
     "sparkling"
   ],
   "live_sources": [],
-  "vivino_verified": 4,
+  "vivino_verified": 3,
   "count": 70,
   "wines": [
     {
@@ -107,10 +107,9 @@
       "region": "Mendoza, Argentina",
       "grape": "Malbec",
       "url": "https://www.ocado.com/search?entry=Catena+Malbec",
-      "image": "https://images.vivino.com/thumbs/PMHgeNvJSNmp9OPIv8Yn2w_pb_x300.png",
-      "vivino_url": "https://www.vivino.com/en/catena-catena-alta-malbec/w/1870?year=2021&price_id=41051356",
-      "vivino_match": "Catena Alta Malbec 2021",
-      "vivino_verified": true
+      "image": null,
+      "vivino_url": null,
+      "vivino_verified": false
     },
     {
       "id": "seed-032",
@@ -369,22 +368,6 @@
       "vivino_verified": false
     },
     {
-      "id": "seed-002",
-      "name": "Château Maris La Touge Syrah",
-      "supermarket": "Waitrose",
-      "type": "red",
-      "price": 15.99,
-      "vivino": 4.1,
-      "ratings": 980,
-      "region": "Languedoc, France",
-      "grape": "Syrah",
-      "url": "https://www.waitrose.com/ecom/shop/search?searchTerm=Ch%C3%A2teau+Maris+La+Touge+Syrah",
-      "image": "https://images.vivino.com/thumbs/B23lM5fVSv6S1iMEVmGAlQ_pb_x300.png",
-      "vivino_url": "https://www.vivino.com/en/chateau-maris-la-touge/w/2258568?year=2020&price_id=35671223",
-      "vivino_match": "Château Maris La Touge 2020",
-      "vivino_verified": true
-    },
-    {
       "id": "seed-004",
       "name": "Villa Maria Private Bin Sauvignon Blanc",
       "supermarket": "Waitrose",
@@ -396,7 +379,7 @@
       "grape": "Sauvignon Blanc",
       "url": "https://www.waitrose.com/ecom/shop/search?searchTerm=Villa+Maria+Private+Bin+Sauvignon+Blanc",
       "image": "https://images.vivino.com/thumbs/8oskU7ePTNiChLomWouUZw_pb_x300.png",
-      "vivino_url": "https://www.vivino.com/en/villa-maria-auckland-private-bin-sauvignon-blanc/w/39034?year=2024&price_id=39802877",
+      "vivino_url": "https://www.vivino.com/en/villa-maria-auckland-private-bin-sauvignon-blanc/w/39034?year=2024&price_id=40741134",
       "vivino_match": "Villa Maria Private Bin Sauvignon Blanc 2024",
       "vivino_verified": true
     },
@@ -1059,6 +1042,22 @@
       "image": null,
       "vivino_url": null,
       "vivino_verified": false
+    },
+    {
+      "id": "seed-002",
+      "name": "Château Maris La Touge Syrah",
+      "supermarket": "Waitrose",
+      "type": "red",
+      "price": 15.99,
+      "vivino": 3.7,
+      "ratings": 980,
+      "region": "Languedoc, France",
+      "grape": "Syrah",
+      "url": "https://www.waitrose.com/ecom/shop/search?searchTerm=Ch%C3%A2teau+Maris+La+Touge+Syrah",
+      "image": "https://images.vivino.com/thumbs/83XKkNuxSICvb9nRQhBFmQ_pb_x300.png",
+      "vivino_url": "https://www.vivino.com/en/chateau-maris-la-touge-syrah/w/778973?year=2020&price_id=38495090",
+      "vivino_match": "Château Maris La Touge Syrah 2020",
+      "vivino_verified": true
     },
     {
       "id": "seed-018",
